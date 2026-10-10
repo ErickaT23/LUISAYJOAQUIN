@@ -1101,7 +1101,7 @@ button {
 .invitado-fondo {
     position: absolute;
     inset: 0;
-    background: url('images/bg-textura.webp') center/cover no-repeat;
+    background: url('images/bg-textura.webp?v=20261009-luisa') center/cover no-repeat;
     opacity: 1;
 }
 
@@ -1857,7 +1857,7 @@ button {
 .events-fondo {
     position: absolute;
     inset: 0;
-    background: url('images/bg-textura.webp') center center / cover no-repeat;
+    background: url('images/bg-textura.webp?v=20261009-luisa') center center / cover no-repeat;
     opacity: 1;
 }
 

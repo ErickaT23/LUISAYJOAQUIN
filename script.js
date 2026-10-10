@@ -69,17 +69,17 @@ function createSiteConfig(remoteConfig) {
 
     return {
         seo: {
-            titulo: 'Miguel & Sofía | Boda 2026',
-            descripcion: 'Boda de Miguel Linares y Sofía Morales - 28 de noviembre de 2026',
+            titulo: 'Luisa de León & Joaquín Gómez | Boda 2026',
+            descripcion: 'Boda de Luisa de León y Joaquín Gómez - 7 de noviembre de 2026',
             autor: 'Two Design',
             ...externalConfig.seo,
             ...normalizedRemoteConfig.seo
         },
         pareja: {
-            nombres: 'Miguel & Sofia',
-            nombresCompletos: 'Miguel Linares & Sofía Morales',
-            fecha: '28-11-2026',
-            fechaVisible: '28 · 11 · 2026',
+            nombres: 'Luisa & Joaquín',
+            nombresCompletos: 'Luisa de León & Joaquín Gómez',
+            fecha: '07-11-2026',
+            fechaVisible: '07 · 11 · 2026',
             ...externalConfig.pareja,
             ...normalizedRemoteConfig.pareja
         },
@@ -92,19 +92,19 @@ function createSiteConfig(remoteConfig) {
         evento: {
             ceremonia: {
                 titulo: 'Ceremonia',
-                lugar: 'Capilla San Jose Obrero',
+                lugar: 'Oratorio del Señor de Esquipulas',
                 hora: '3:00 PM',
                 direccion: 'Av. Libertador 1234, San Jose',
-                ubicacionUrl: 'https://maps.google.com/?q=Capilla+San+Jose+Obrero',
+                ubicacionUrl: 'https://waze.com/ul/h9fxe100b5',
                 ...(remoteEvento.ceremonia || {}),
                 ...(localEvento.ceremonia || {})
             },
             recepcion: {
                 titulo: 'Recepcion',
-                lugar: 'Finca Los Rosales',
+                lugar: 'Jardín Casa Azul',
                 hora: '6:00 PM',
                 direccion: 'Km 15, Carretera al Mar',
-                ubicacionUrl: 'https://maps.google.com/?q=Finca+Los+Rosales',
+                ubicacionUrl: 'https://waze.com/ul/h9fxe0cysy',
                 ...(localEvento.recepcion || {}),
                 ...(remoteEvento.recepcion || {})
             }
@@ -116,7 +116,7 @@ function createSiteConfig(remoteConfig) {
             ...normalizedRemoteConfig.textos
         },
         footer: {
-            hashtag: '#MiguelYSofia',
+            hashtag: '#LuisaYJoaquin',
             instagramUrl: '',
             facebookUrl: '',
             marcaTexto: 'Diseño',
