@@ -1,15 +1,7 @@
 import { subscribeToConfirmations, subscribeToInvitados } from "./database.js";
 
-const guestDirectorySeed = {
-    "1": { nombre: "María López", pases: 2 },
-    "2": { nombre: "Carlos Méndez", pases: 4 },
-    "3": { nombre: "Andrea Ruiz", pases: 1 },
-    "4": { nombre: "Familia García", pases: 6 },
-    "5": { nombre: "Pedro Sánchez", pases: 2 }
-};
-
 const guestDirectoriesByEvent = {
-    "miguel-sofia-2026": guestDirectorySeed
+    "luisa-joaquin-2026": {}
 };
 
 window.LocalGuestSeeds = {
@@ -23,7 +15,7 @@ function resolveDashboardEventContext() {
     const externalConfig = window.config || {};
     const eventConfig = externalConfig.event || {};
     const eventIdParam = String(eventConfig.eventIdParam || "eventId").trim() || "eventId";
-    const defaultEventId = String(eventConfig.defaultEventId || "miguel-sofia-2026").trim() || "miguel-sofia-2026";
+    const defaultEventId = String(eventConfig.defaultEventId || "luisa-joaquin-2026").trim() || "luisa-joaquin-2026";
     const params = new URLSearchParams(window.location.search || "");
     const fromQuery = String(params.get(eventIdParam) || "").trim();
     const fromWindow = String(

@@ -85,7 +85,7 @@ function createSiteConfig(remoteConfig) {
         },
         musica: {
             titulo: 'Nuestra Cancion',
-            archivo: 'audio/nuestra-cancion.mp3',
+            archivo: 'audio/nuestra-cancion.mp3?v=20261018-luisa',
             ...externalConfig.musica,
             ...normalizedRemoteConfig.musica
         },
@@ -266,13 +266,92 @@ function applyFooterConfig() {
 // ============================================
 const GuestConfig = {
     invitados: {
-        "1": { nombre: "María López", pases: 2 },
-        "2": { nombre: "Carlos Méndez", pases: 4 },
-        "3": { nombre: "Andrea Ruiz", pases: 1 },
-        "4": { nombre: "Familia García", pases: 6 },
-        "5": { nombre: "Pedro Sánchez", pases: 2 }
+        "1": { nombre: "Luisa de León", pases: 1 },
+        "2": { nombre: "Familia de León Alvarado", pases: 5 },
+        "3": { nombre: "Sr Hugo Alvarado & familia", pases: 3 },
+        "4": { nombre: "Familia Palencia Alvarado", pases: 3 },
+        "5": { nombre: "Gonzalo Palencia", pases: 1 },
+        "6": { nombre: "Familia Palencia Gómez", pases: 3 },
+        "7": { nombre: "Francisco & Leslie", pases: 2 },
+        "8": { nombre: "Fam Soto Alvarado", pases: 2 },
+        "9": { nombre: "Ricardo Soto", pases: 1 },
+        "10": { nombre: "Gónzalo Soto", pases: 1 },
+        "11": { nombre: "Fam Garcia Soto", pases: 4 },
+        "12": { nombre: "Brenda Soto & Familia", pases: 4 },
+        "13": { nombre: "Adalidia Soto & Familia", pases: 3 },
+        "14": { nombre: "David & Vianny", pases: 2 },
+        "15": { nombre: "Carmen Gómez", pases: 1 },
+        "16": { nombre: "Claudia Gómez", pases: 1 },
+        "17": { nombre: "Mayra Alvarado & Familia", pases: 4 },
+        "18": { nombre: "Adriana Díaz", pases: 1 },
+        "19": { nombre: "Ricardo de León", pases: 1 },
+        "20": { nombre: "Johana Cigarroa", pases: 1 },
+        "21": { nombre: "Carlos Díaz", pases: 1 },
+        "22": { nombre: "Moises Sierra & Enrique", pases: 2 },
+        "23": { nombre: "Marilyn Hernandez", pases: 1 },
+        "24": { nombre: "Ximenna Lopez", pases: 1 },
+        "25": { nombre: "Saraí Gónzalez", pases: 1 },
+        "26": { nombre: "Kimberly Rivera", pases: 1 },
+        "27": { nombre: "Alejandra Sandoval", pases: 1 },
+        "28": { nombre: "Jose Cantoral & Gaby Avila", pases: 2 },
+        "29": { nombre: "Monika Gonzalez", pases: 1 },
+        "30": { nombre: "Luis Alvarez", pases: 1 },
+        "31": { nombre: "Mario & Esther", pases: 2 },
+        "32": { nombre: "Javier", pases: 1 },
+        "33": { nombre: "Yesenia Lopez", pases: 1 },
+        "34": { nombre: "Katy Moreno", pases: 1 },
+        "35": { nombre: "Mariela Veliz", pases: 1 },
+        "36": { nombre: "Lic David Reyes", pases: 1 },
+        "37": { nombre: "Estuardo Mendez", pases: 1 },
+        "38": { nombre: "Alejandro Amezquita", pases: 1 },
+        "39": { nombre: "Claudia Rivas", pases: 1 },
+        "40": { nombre: "Henry Valenzuala", pases: 1 },
+        "41": { nombre: "Manolo & Claudia", pases: 2 },
+        "42": { nombre: "María Jose", pases: 1 },
+        "43": { nombre: "Lic Jose Sierra", pases: 2 },
+        "44": { nombre: "Ana Ilsa García", pases: 1 },
+        "45": { nombre: "Flor de María", pases: 1 },
+        "46": { nombre: "Ana María", pases: 1 },
+        "47": { nombre: "Carmen García", pases: 1 },
+        "48": { nombre: "Fam Gomez Carrrera", pases: 2 },
+        "49": { nombre: "Norma Gómez", pases: 1 },
+        "50": { nombre: "Ketler Escobar", pases: 1 },
+        "51": { nombre: "David Escobar y esposa", pases: 2 },
+        "52": { nombre: "Fam Herrera Escobar", pases: 2 },
+        "53": { nombre: "keny & Gaby", pases: 2 },
+        "54": { nombre: "Danilo & Mary", pases: 2 },
+        "55": { nombre: "Eddin & Lesby", pases: 2 },
+        "56": { nombre: "Damaris Gómez", pases: 1 },
+        "57": { nombre: "Antonio & Maricela", pases: 2 },
+        "58": { nombre: "Carlos Gómez", pases: 1 },
+        "59": { nombre: "Ricardo Gomez & Alejandra", pases: 2 },
+        "60": { nombre: "Karina Gómez & Carlos", pases: 2 },
+        "61": { nombre: "Joaquín Gómez y acompañante", pases: 2 },
+        "62": { nombre: "Rony Gómez y acompañante", pases: 2 },
+        "63": { nombre: "Jonathan Hernandez", pases: 1 },
+        "64": { nombre: "Familia Yax Escobar", pases: 2 },
+        "65": { nombre: "Ricardo Santos y acompañante", pases: 2 },
+        "66": { nombre: "Dulce Alvizurez & Alex", pases: 2 },
+        "67": { nombre: "Juan Pablo Hernandez", pases: 1 },
+        "68": { nombre: "Shirley Montenegro", pases: 1 },
+        "69": { nombre: "Haroldo Roldán", pases: 2 },
+        "70": { nombre: "Familia Liquidano Muñoz", pases: 2 },
+        "71": { nombre: "Jaime Rafael", pases: 1 },
+        "72": { nombre: "Andrea Morán y acompañante", pases: 2 },
+        "73": { nombre: "Eduardo Yache & Sara", pases: 2 },
+        "74": { nombre: "Luzmarie Enriquez & Nicola", pases: 2 },
+        "75": { nombre: "Ivan Veliz y Esposa", pases: 2 },
+        "76": { nombre: "Jaqueline Bosarreyes", pases: 1 },
+        "77": { nombre: "Cristian Morales y acompañante", pases: 2 },
+        "78": { nombre: "Cindy Cristales", pases: 1 },
+        "79": { nombre: "Paula Herandez", pases: 1 },
+        "80": { nombre: "Karla Cardona", pases: 2 },
+        "81": { nombre: "Ludwing Rivera", pases: 2 },
+        "82": { nombre: "Lic. Oscar González", pases: 1 },
+        "83": { nombre: "Mónica Lam", pases: 1 },
+        "84": { nombre: "Carlitos & Familia", pases: 4 }
     },
-    invitadoDefault: { nombre: "Invitado Especial", pases: 2 },
+    invitadoDefault: { nombre: "Invitado no registrado", pases: 1 },
     paramId: 'id'
 };
 
@@ -339,8 +418,14 @@ const InvitadoApp = {
 
     renderSection() {
         const nombreEl = document.getElementById('nombre-invitado');
+        const portadaNombreEl = document.getElementById('portada-nombre-invitado');
+        const portadaPasesEl = document.getElementById('portada-numero-lugares');
+        const portadaTextoPasesEl = document.getElementById('portada-texto-lugares');
 
         if (nombreEl) nombreEl.textContent = this.data.nombre;
+        if (portadaNombreEl) portadaNombreEl.textContent = this.data.nombre;
+        if (portadaPasesEl) portadaPasesEl.textContent = String(this.data.pases);
+        if (portadaTextoPasesEl) portadaTextoPasesEl.textContent = Number(this.data.pases) === 1 ? 'lugar' : 'lugares';
         this.renderPasesText(this.data.pases);
     },
 
@@ -719,6 +804,7 @@ function initRSVP() {
     let popupTimer = null;
     const defaultIntroText = introMessage ? introMessage.textContent : '';
     const confirmedIntroText = 'Gracias por haber completado el formulario de asistencia.';
+    const rsvpWhatsappNumber = '50236011737';
     
     if (!form) return;
 
@@ -949,6 +1035,15 @@ function initRSVP() {
         try {
             const savedRecord = await saveConfirmation(payload);
             applyConfirmedState(savedRecord);
+            const whatsappMessage = [
+                'Confirmación de asistencia - Luisa & Joaquín',
+                '',
+                'Nombre: ' + (payload.nombre || 'Invitado'),
+                'Respuesta: ' + (respuesta === 'si' ? 'Sí asistiré' : 'No podré asistir'),
+                respuesta === 'si' ? 'Invitados: ' + confirmedCount : ''
+            ].filter(Boolean).join('\n');
+            const whatsappUrl = 'https://wa.me/' + rsvpWhatsappNumber + '?text=' + encodeURIComponent(whatsappMessage);
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
             showPopup(confirmationMessages[respuesta]);
         } catch (error) {
             if (error && error.code === 'RSVP_ALREADY_CONFIRMED') {

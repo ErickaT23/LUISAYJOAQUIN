@@ -1,18 +1,18 @@
 :root {
-    --color-corinto: #8b4d4d;
-    --color-corinto-dark: #633636;
-    --color-corinto-soft: #a97878;
-    --color-beige: #e8d5cd;
-    --color-beige-soft: #f6efea;
+    --color-corinto: #28558e;
+    --color-corinto-dark: #071a39;
+    --color-corinto-soft: #6f96c5;
+    --color-beige: #c7a45a;
+    --color-beige-soft: #f7f1df;
     --color-cream: #fffdfa;
-    --color-ink: #2c2424;
-    --color-muted: #756666;
-    --color-border: rgba(107, 61, 61, 0.18);
-    --shadow-card: 0 16px 42px rgba(44, 36, 36, 0.09);
-    --shadow-soft: 0 10px 24px rgba(44, 36, 36, 0.06);
+    --color-ink: #071a39;
+    --color-muted: #5f6f86;
+    --color-border: rgba(39, 78, 128, 0.18);
+    --shadow-card: 0 16px 42px rgba(7, 26, 57, 0.1);
+    --shadow-soft: 0 10px 24px rgba(7, 26, 57, 0.07);
 
-    --font-display: "Cormorant", Georgia, serif;
-    --font-editorial: "Libre Baskerville", Georgia, serif;
+    --font-display: "Cinzel", Georgia, serif;
+    --font-editorial: "Pinyon Script", cursive;
     --font-body: "Jost", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -26,9 +26,8 @@ body {
     font-family: var(--font-body);
     color: var(--color-ink);
     background:
-        radial-gradient(circle at 8% 0%, rgba(232, 213, 205, 0.52) 0%, rgba(255, 253, 250, 0) 46%),
-        radial-gradient(circle at 100% 0%, rgba(139, 77, 77, 0.14) 0%, rgba(255, 253, 250, 0) 42%),
-        linear-gradient(180deg, #fffcf9 0%, #fffdfa 100%);
+        repeating-linear-gradient(90deg, rgba(245, 238, 233, 0.42) 0, rgba(245, 238, 233, 0.42) 6px, rgba(255, 255, 255, 0.16) 6px, rgba(255, 255, 255, 0.16) 12px),
+        linear-gradient(135deg, #f8f5ee 0%, #ffffff 52%, #eef3f9 100%);
 }
 
 .dashboard-shell {
@@ -41,8 +40,8 @@ body {
     position: relative;
     margin-bottom: 2.55rem;
     padding: 1.95rem 2rem 2.05rem;
-    background: linear-gradient(145deg, rgba(255, 254, 251, 0.9) 0%, rgba(248, 240, 234, 0.74) 100%);
-    border: 1px solid rgba(107, 61, 61, 0.16);
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(199, 164, 90, 0.34);
     box-shadow: var(--shadow-card);
 }
 
@@ -68,7 +67,7 @@ body {
 .dashboard-header h1 {
     margin: 0;
     font-family: var(--font-display);
-    font-size: clamp(2.35rem, 4vw, 3.55rem);
+    font-size: clamp(1.18rem, 2vw, 1.78rem);
     font-weight: 500;
     letter-spacing: 0.015em;
     line-height: 0.98;
@@ -78,7 +77,7 @@ body {
 .dashboard-subtitle {
     margin: 0.72rem 0 0;
     font-family: var(--font-editorial);
-    font-size: 1rem;
+    font-size: 50px;
     font-style: italic;
     letter-spacing: 0.02em;
     color: var(--color-muted);
@@ -120,8 +119,8 @@ body {
 }
 
 .summary-card-highlight {
-    background: linear-gradient(155deg, rgba(139, 77, 77, 0.94) 0%, rgba(99, 54, 54, 0.98) 100%);
-    border-color: rgba(107, 61, 61, 0.34);
+    background: linear-gradient(135deg, #071a39 0%, #28558e 55%, #5276a8 100%);
+    border-color: rgba(199, 164, 90, 0.5);
 }
 
 .summary-card-highlight::before {
@@ -228,8 +227,8 @@ body {
 
 .table-export-btn {
     padding: 0.58rem 0.98rem;
-    border: 1px solid rgba(99, 54, 54, 0.85);
-    background: linear-gradient(140deg, rgba(139, 77, 77, 0.92) 0%, rgba(99, 54, 54, 0.98) 100%);
+    border: 1px solid rgba(7, 26, 57, 0.85);
+    background: linear-gradient(140deg, #071a39 0%, #28558e 58%, #5276a8 100%);
     color: #fffdfa;
     font-family: var(--font-body);
     font-size: 0.68rem;
@@ -327,8 +326,8 @@ body {
 }
 
 .filter-chip.is-active {
-    background: linear-gradient(140deg, rgba(139, 77, 77, 0.92) 0%, rgba(99, 54, 54, 0.98) 100%);
-    border-color: rgba(99, 54, 54, 0.8);
+    background: linear-gradient(140deg, #071a39 0%, #28558e 58%, #5276a8 100%);
+    border-color: rgba(7, 26, 57, 0.8);
     color: #fffdfa;
 }
 
@@ -491,9 +490,9 @@ body {
 }
 
 .status-badge--pendiente {
-    background: rgba(232, 213, 205, 0.62);
-    border-color: rgba(139, 77, 77, 0.25);
-    color: rgba(107, 61, 61, 0.93);
+    background: rgba(199, 164, 90, 0.16);
+    border-color: rgba(199, 164, 90, 0.48);
+    color: #6b4b16;
 }
 
 .empty-state {
@@ -602,7 +601,7 @@ body {
     }
 
     .dashboard-header h1 {
-        font-size: clamp(2rem, 7vw, 2.5rem);
+        font-size: 20px;
     }
 
     .summary-card {
@@ -738,10 +737,53 @@ body {
     }
 
     .confirmation-card-name {
-        font-size: 0.98rem;
+        font-size: 25px;
     }
 
     .confirmation-card-line {
         font-size: 0.78rem;
     }
+}
+
+/* Paleta final de la invitacion: azul, dorado y neutros. */
+.dashboard-header::after,
+.summary-card::before {
+    background: linear-gradient(90deg, rgba(199, 164, 90, 0.64), rgba(82, 118, 168, 0.12));
+}
+
+.table-clear-btn:hover,
+.filter-chip:hover,
+.table-search-input:focus,
+.table-export-btn,
+.filter-chip.is-active {
+    border-color: rgba(7, 26, 57, 0.72);
+}
+
+.table-clear-btn:hover,
+.filter-chip:hover {
+    background: rgba(82, 118, 168, 0.12);
+}
+
+.table-search-input:focus {
+    box-shadow: 0 0 0 3px rgba(82, 118, 168, 0.16);
+}
+
+.status-badge--si {
+    background: rgba(82, 118, 168, 0.14);
+    border-color: rgba(40, 85, 142, 0.38);
+    color: var(--color-corinto-dark);
+}
+
+.table-wrapper,
+.confirmation-card {
+    border-color: rgba(40, 85, 142, 0.2);
+}
+
+.mobile-empty-state {
+    border-color: rgba(199, 164, 90, 0.42);
+}
+
+button:hover,
+button:focus-visible {
+    outline-color: #c7a45a;
 }

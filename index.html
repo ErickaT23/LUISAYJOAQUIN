@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="author" content="Luisa de León y Joaquín Gómez">
     <title>Luisa de León &amp; Joaquín Gómez | Boda 2026</title>
     <meta name="description" content="Acompáñanos a celebrar la boda de Luisa de León y Joaquín Gómez el 7 de noviembre de 2026.">
     <meta property="og:title" content="Luisa de León &amp; Joaquín Gómez">
     <meta property="og:description" content="Acompáñanos a celebrar la boda de Luisa de León y Joaquín Gómez el 7 de noviembre de 2026.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://images.pexels.com/photos/40225366/pexels-photo-40225366.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/40225366/pexels-photo-40225366.png">
     <meta property="og:url" content="https://modeloelegance.netlify.app">
     <meta property="og:type" content="website"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&amp;family=Jost:wght@300;400;500&amp;family=Playfair:ital,wght@1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Pinyon+Script&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20261009-luisa">
+    <link rel="stylesheet" href="styles.css?v=20261018-luisa">
 </head>
 <body>
     <!-- PORTADA -->
@@ -33,6 +38,11 @@
                 </span>
             </h1>
             <p class="portada-subtitulo">Nos casamos</p>
+            <div class="portada-invitado-card" aria-label="Información del invitado">
+                <p class="portada-invitado-nombre" id="portada-nombre-invitado">Nombre del Invitado</p>
+                <p class="portada-invitado-label">HEMOS RESERVADO</p>
+                <p class="portada-invitado-pases"><span id="portada-numero-lugares">1</span> <span id="portada-texto-lugares">lugar</span> en su honor</p>
+            </div>
             <button class="portada-boton" id="btn-abrir">Abrir invitación</button>
         </div>
     </section>
@@ -43,8 +53,8 @@
         <!-- Hero Invitado -->
         <section class="hero-invitado" id="hero-invitado">
             <div class="hero-invitado-visual">
-                <img class="hero-invitado-foto" src="images/V1.webp?v=20261009-luisa" alt="Luisa y Joaquín">
-                <img class="hero-invitado-monograma" src="images/MONOGRAMA.webp?v=20261009-luisa" alt="Monograma de Luisa y Joaquín">
+                <img class="hero-invitado-foto" src="images/V1.webp?v=20261018-luisa" alt="Luisa y Joaquín">
+                <img class="hero-invitado-monograma" src="images/MONOGRAMA.webp?v=20261018-luisa" alt="Monograma de Luisa y Joaquín">
             </div>
         </section>
 
@@ -79,8 +89,8 @@
                 <div class="section-inner blessing-inner">
                     <h2 class="blessing-title">Con la bendición de Dios y de nuestros amados padres</h2>
                     <div class="blessing-parents">
-                        <p><strong>Papas de la Novia</strong><br><span class="blessing-parent-name invitado-nombre">Gustavo de León &amp; Lourdes Alvarado</span></p>
-                        <p><strong>Papas del Novio</strong><br><span class="blessing-parent-name invitado-nombre">Ana Ilsa García &amp; Joaquín Gómez Sacrapal</span></p>
+                        <p><strong>Padres de la Novia</strong><br><span class="blessing-parent-name invitado-nombre">Gustavo de León &amp; Lourdes Alvarado</span></p>
+                        <p><strong>Padres del Novio</strong><br><span class="blessing-parent-name invitado-nombre">Ana Ilsa García &amp; Joaquín Gómez (†)</span></p>
                     </div>
                 </div>
             </div>
@@ -93,7 +103,7 @@
         </section>
 
         <section class="section photo-separator-section" id="photo-separator-date" aria-label="Separador visual">
-            <img class="photo-separator-image" src="images/V3.webp?v=20261009-luisa" alt="Luisa y Joaquín">
+            <img class="photo-separator-image" src="images/V3.webp?v=20261018-luisa" alt="Luisa y Joaquín">
         </section>
 
         <!-- Sección Invitado -->
@@ -174,7 +184,7 @@
             <div class="events-container">
                 <div class="event-card">
                     <div class="event-icon">
-                        <img src="images/CEREMONIA.webp?v=20261009-luisa" alt="Ceremonia">
+                        <img src="images/CEREMONIA.webp?v=20261018-luisa" alt="Ceremonia">
                     </div>
                     <h3 class="event-titulo">
                         Ceremonia
@@ -187,7 +197,7 @@
 
                 <div class="event-card">
                     <div class="event-icon">
-                        <img src="images/RECEPCION.webp?v=20261009-luisa" alt="Recepción">
+                        <img src="images/RECEPCION.webp?v=20261018-luisa" alt="Recepción">
                     </div>
                     <h3 class="event-titulo">
                         Recepción
@@ -207,31 +217,37 @@
                 <h2 class="itinerary-title">Itinerario</h2>
                 <div class="agenda-itinerary">
                     <article class="itinerary-item">
+                        <img class="itinerary-icon" src="images/I1.png" alt="">
                         <p class="itinerary-name"><span class="itinerary-letter">I</span><span class="itinerary-word">ngreso a la ceremonia</span></p>
                         <p class="itinerary-time">3:30 pm</p>
                     </article>
                     <div class="itinerary-divider" aria-hidden="true">|</div>
                     <article class="itinerary-item">
+                        <img class="itinerary-icon" src="images/I2.png" alt="">
                         <p class="itinerary-name"><span class="itinerary-letter">I</span><span class="itinerary-word">nicio de la ceremonia</span></p>
                         <p class="itinerary-time">4:00 pm</p>
                     </article>
                     <div class="itinerary-divider" aria-hidden="true">|</div>
                     <article class="itinerary-item">
+                        <img class="itinerary-icon" src="images/I3.png" alt="">
                         <p class="itinerary-name"><span class="itinerary-letter">C</span><span class="itinerary-word">octel de bienvenida</span></p>
                         <p class="itinerary-time">6:00 pm</p>
                     </article>
                     <div class="itinerary-divider" aria-hidden="true">|</div>
                     <article class="itinerary-item">
+                        <img class="itinerary-icon" src="images/I4.png" alt="">
                         <p class="itinerary-name"><span class="itinerary-letter">P</span><span class="itinerary-word">rimer baile y brindis</span></p>
                         <p class="itinerary-time">6:30 pm</p>
                     </article>
                     <div class="itinerary-divider" aria-hidden="true">|</div>
                     <article class="itinerary-item">
+                        <img class="itinerary-icon" src="images/I5.png" alt="">
                         <p class="itinerary-name"><span class="itinerary-letter">C</span><span class="itinerary-word">ena</span></p>
                         <p class="itinerary-time">7:00 pm</p>
                     </article>
                     <div class="itinerary-divider" aria-hidden="true">|</div>
                     <article class="itinerary-item">
+                        <img class="itinerary-icon" src="images/I6.png" alt="">
                         <p class="itinerary-name"><span class="itinerary-letter">A</span><span class="itinerary-word"> celebrar</span></p>
                         <p class="itinerary-time">8:00 pm</p>
                     </article>
@@ -240,7 +256,7 @@
         </section>
 
         <section class="section photo-separator-section" id="photo-separator-events" aria-label="Separador visual">
-            <img class="photo-separator-image" src="images/V4.webp?v=20261009-luisa" alt="Luisa y Joaquín">
+            <img class="photo-separator-image" src="images/V4.webp?v=20261018-luisa" alt="Luisa y Joaquín">
         </section>
 
         <!-- Dress Code -->
@@ -248,7 +264,7 @@
             <div class="events-fondo"></div>
             <div class="events-overlay"></div>
             <div class="section-inner dresscode-inner media-share-inner">
-                <img class="dresscode-icon" src="images/DRESSCODE.webp?v=20261009-luisa" alt="Dress code">
+                <img class="dresscode-icon" src="images/DRESSCODE.webp?v=20261018-luisa" alt="Dress code">
                 <h2 class="dresscode-title media-share-title">Dress Code</h2>
                 <p class="dresscode-text media-share-text">Formal.<br>Hombres: Traje formal con saco y corbata; te agradecemos evitar tonos azules.<br>Mujeres: Vestido formal largo.<br>Por favor, evita el blanco, toda la gama de azules, celestes y café, ya que estarán reservados para la ambientación de nuestra boda.</p>
                 <div class="dresscode-palette">
@@ -263,42 +279,25 @@
             </div>
         </section>
 
-        <section class="section recommendations-section media-share-section" id="recommendations">
-            <div class="section-inner recommendations-inner media-share-inner">
-                <h2 class="media-share-title">Recomendaciones</h2>
-                <div class="recommendation-item">
-                    <h3>Tráfico</h3>
-                    <p>La carretera a San Lucas Sacatepéquez puede presentar tráfico, especialmente durante fines de semana. Te recomendamos salir con suficiente anticipación para llegar tranquilo y disfrutar desde el primer momento.</p>
-                </div>
-                <div class="recommendation-item">
-                    <h3>Clima</h3>
-                    <p>En noviembre las noches pueden ser bastante frescas, así que te recomendamos llevar un abrigo, saco o chal para disfrutar cómodamente de la celebración.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Regalo -->
         <section class="section gifts-section media-share-section" id="gifts">
-            <div class="events-fondo"></div>
-            <div class="events-overlay"></div>
             <div class="section-inner gifts-inner">
                 <h2 class="gifts-title media-share-title">Regalo</h2>
-                <p class="gifts-text">El mejor regalo es que compartas este día con nosotros.</p>
-                <p class="gifts-text">Pero si deseas acompañarnos con un detalle, puedes hacerlo de las siguientes maneras:</p>
+                <p class="gifts-text">El mejor regalo es que compartas este día con nosotros. Pero si deseas acompañarnos con un detalle, puedes hacerlo de las siguientes maneras:</p>
                 <div class="gift-option">
                     <p class="gifts-text">Lluvia de sobres o efectivo</p>
                     <button type="button" class="btn-gift" id="btn-account-modal">Ver cuenta</button>
                 </div>
                 <div class="gift-option">
                     <p class="gifts-text">Bodas Cemaco</p>
-                    <button type="button" class="btn-gift" disabled>Lista de Regalos</button>
+                    <a href="https://www.cemaco.com/list/GOMEZDELEON07112026" target="_blank" rel="noopener noreferrer" class="btn-gift">Lista de Regalos</a>
                 </div>
             </div>
         </section>
 
 
         <section class="section photo-separator-section" id="photo-separator-dresscode" aria-label="Separador visual">
-            <img class="photo-separator-image" src="images/V5.webp?v=20261009-luisa" alt="Luisa y Joaquín">
+            <img class="photo-separator-image" src="images/V5.webp?v=20261018-luisa" alt="Luisa y Joaquín">
         </section>
 
         <section class="section playlist-section media-share-section" id="playlist">
@@ -378,7 +377,21 @@
         </div>
 
         <section class="section photo-separator-section" id="photo-separator-adults" aria-label="Separador visual">
-            <img class="photo-separator-image" src="images/V2.webp?v=20261009-luisa" alt="Luisa y Joaquín">
+            <img class="photo-separator-image" src="images/V2.webp?v=20261018-luisa" alt="Luisa y Joaquín">
+        </section>
+
+        <section class="section recommendations-section media-share-section" id="recommendations">
+            <div class="section-inner recommendations-inner media-share-inner">
+                <h2 class="media-share-title">Recomendaciones</h2>
+                <div class="recommendation-item">
+                    <h3>Tráfico</h3>
+                    <p>La carretera a San Lucas Sacatepéquez puede presentar tráfico, especialmente durante fines de semana. Te recomendamos salir con suficiente anticipación para llegar tranquilo y disfrutar desde el primer momento.</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3>Clima</h3>
+                    <p>En noviembre las noches pueden ser bastante frescas, así que te recomendamos llevar un abrigo, saco o chal para disfrutar cómodamente de la celebración.</p>
+                </div>
+            </div>
         </section>
 
         <section class="section no-children-section" id="no-children">
@@ -386,7 +399,8 @@
             <div class="events-overlay"></div>
             <div class="section-inner playlist-inner event-card">
                 <h2 class="playlist-title">Solo adultos</h2>
-                <p class="playlist-text">Aunque nos encantan los niños esta será una celebración solo para adultos, Agradecemos su comprensión.<br>Nos vemos el 7 de noviembre.<br>Con amor,<br>Luisa &amp; Joaquin</p>
+                <p class="playlist-text">Aunque nos encantan los niños esta será una celebración solo para adultos, agradecemos su comprensión. Nos vemos el 7 de noviembre.</p>
+                <p class="playlist-text">Con amor, Luisa &amp; Joaquin</p>
             </div>
         </section>
 
@@ -445,17 +459,17 @@
         <section id="gallery-auto" class="section gallery-auto-section">
             <div class="gallery-auto-slider" aria-label="Galería romántica automática">
                 <div class="gallery-auto-slide is-active" data-index="0">
-                    <img src="images/V1.1.webp?v=20261009-luisa" alt="Luisa y Joaquín" loading="lazy">
+                    <img src="images/V1.1.webp?v=20261018-luisa" alt="Luisa y Joaquín" loading="lazy">
                 </div>
                 <div class="gallery-auto-slide" data-index="1">
-                    <img src="images/V3.1.webp?v=20261009-luisa" alt="Luisa y Joaquín" loading="lazy">
+                    <img src="images/V3.1.webp?v=20261018-luisa" alt="Luisa y Joaquín" loading="lazy">
                 </div>
             </div>
         </section>
 
         <section class="section frase-final" aria-label="Frase final">
             <div class="frase-container">
-                <p class="frase-texto">Dos almas que se encuentran, dos corazones que se fusionan para caminar una misma vida...</p>
+                <p class="frase-texto">Así que no volverán a ser ya dos, sino una sola carne. Por lo tanto, lo que Dios ha unido que no lo separe el hombre. (Mateo 19:6)</p>
             </div>
         </section>
 
@@ -489,7 +503,7 @@
 
     <div class="music-fab" id="music-fab" aria-live="polite">
         <audio id="musica-audio" loop>
-            <source src="audio/nuestra-cancion.mp3" type="audio/mpeg">
+            <source src="audio/nuestra-cancion.mp3?v=20261018-luisa" type="audio/mpeg">
         </audio>
         <button id="musica-btn" class="music-fab-btn" type="button" aria-label="Pausar música" aria-pressed="true" data-spotify-url="https://open.spotify.com/playlist/4BIr0EFvNn51OiyBiqXt7w?si=fb776dcf4d294b9c&pt=3e153848aef944a3694a44d90af48e91">
             <i class="fa-solid fa-volume-high music-fab-icon-on" aria-hidden="true"></i>
@@ -497,8 +511,8 @@
         </button>
     </div>
 
-    <script src="config.js?v=20261009-luisa"></script>
-    <script src="script.js?v=20261009-luisa"></script>
-    <script type="module" src="database.js?v=20261009-luisa"></script>
+    <script src="config.js?v=20261018-luisa"></script>
+    <script src="script.js?v=20261018-luisa"></script>
+    <script type="module" src="database.js?v=20261018-luisa"></script>
 </body>
 </html>

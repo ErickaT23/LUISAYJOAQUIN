@@ -353,6 +353,57 @@ button {
     margin-bottom: 3rem;
 }
 
+.portada-invitado-card {
+    width: min(78vw, 19rem);
+    margin: -1rem auto 2.2rem;
+    padding: 0.9rem 1.2rem 1rem;
+    border-radius: 0.35rem;
+    background: rgba(255, 255, 255, 0.64);
+    border: 1px solid transparent;
+    border-image: linear-gradient(135deg, #8a6824 0%, #c7a45a 38%, #f0d58a 55%, #a77c2d 78%, #6b4b16 100%) 1;
+    box-shadow: 0 0.8rem 2rem rgba(30, 20, 20, 0.06);
+    backdrop-filter: blur(3px);
+}
+
+.portada-invitado-nombre,
+.portada-invitado-label,
+.portada-invitado-pases {
+    margin: 0;
+}
+
+.portada-invitado-nombre {
+    font-family: var(--font-script);
+    font-size: clamp(1.7rem, 7vw, 2rem);
+    line-height: 1.1;
+    background: linear-gradient(115deg, #071a39 0%, #28558e 28%, #a7c8ef 47%, #315e96 64%, #071a39 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.portada-invitado-label {
+    margin-top: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    background: linear-gradient(135deg, #8a6824 0%, #c7a45a 38%, #f0d58a 55%, #a77c2d 78%, #6b4b16 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.portada-invitado-pases {
+    margin-top: 0.28rem;
+    font-family: var(--font-editorial);
+    font-size: 1.05rem;
+    letter-spacing: 0.015em;
+    background: linear-gradient(115deg, #071a39 0%, #28558e 28%, #a7c8ef 47%, #315e96 64%, #071a39 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .portada-boton {
     display: inline-block;
     padding: var(--spacing-sm) var(--spacing-xl);
@@ -920,7 +971,6 @@ button {
 
 .gifts-section .gifts-inner {
     background: #ffffff !important;
-    padding: clamp(2rem, 6vw, 3.5rem) clamp(1.5rem, 5vw, 3rem);
     border: 1px solid rgb(23 54 95 / 12%);
     border-radius: 2px;
     box-shadow: 0 12px 36px rgb(24 38 61 / 12%);
@@ -1101,7 +1151,7 @@ button {
 .invitado-fondo {
     position: absolute;
     inset: 0;
-    background: url('images/bg-textura.webp?v=20261009-luisa') center/cover no-repeat;
+     background: url('images/bg-textura.webp?v=20261018-luisa') center/cover no-repeat;
     opacity: 1;
 }
 
@@ -1857,7 +1907,7 @@ button {
 .events-fondo {
     position: absolute;
     inset: 0;
-    background: url('images/bg-textura.webp?v=20261009-luisa') center center / cover no-repeat;
+     background: url('images/bg-textura.webp?v=20261018-luisa') center center / cover no-repeat;
     opacity: 1;
 }
 
@@ -2092,6 +2142,119 @@ button {
     text-align: center;
     gap: 0.34rem;
     padding: 0.58rem 0;
+}
+
+.itinerary-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.25rem;
+    mix-blend-mode: multiply;
+}
+
+#gifts.gifts-section {
+    background: #ffffff !important;
+}
+
+#gifts.gifts-section .gifts-inner {
+    background: #ffffff;
+    border: 0;
+    box-shadow: none;
+}
+
+#gifts.gifts-section::before,
+#gifts.gifts-section::after {
+    display: none;
+    content: none;
+}
+
+#recommendations.recommendations-section {
+    background: #ffffff;
+}
+
+#recommendations.recommendations-section .recommendations-inner {
+    position: relative;
+    z-index: 1;
+    max-width: var(--max-width);
+    background: #ffffff;
+    border: 1px solid rgb(139 77 77 / 18%);
+    box-shadow: 0 12px 36px rgb(61 56 53 / 12%);
+    padding: clamp(2rem, 6vw, 3.1rem) clamp(1.4rem, 5vw, 2.8rem);
+}
+
+#recommendations.recommendations-section .recommendation-item h3 {
+    background: linear-gradient(135deg, #8a6824 0%, #c7a45a 38%, #f0d58a 55%, #a77c2d 78%, #6b4b16 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#recommendations.recommendations-section .recommendation-item p {
+    background: linear-gradient(115deg, #071a39 0%, #28558e 28%, #a7c8ef 47%, #315e96 64%, #071a39 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#gifts.gifts-section .gifts-inner > .gifts-text {
+    background: linear-gradient(115deg, #071a39 0%, #28558e 28%, #a7c8ef 47%, #315e96 64%, #071a39 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+#gifts.gifts-section .gift-option .gifts-text {
+    background: linear-gradient(135deg, #8a6824 0%, #c7a45a 38%, #f0d58a 55%, #a77c2d 78%, #6b4b16 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+}
+
+#gifts.gifts-section .btn-gift {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.72rem 1.9rem;
+    background: var(--color-corinto) !important;
+    color: var(--color-white) !important;
+    border: 1px solid rgba(107, 61, 61, 0.2) !important;
+    font-size: 0.66rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+#gifts.gifts-section .btn-gift:hover {
+    background: var(--color-corinto-dark) !important;
+    border-color: rgba(107, 61, 61, 0.2) !important;
+    color: var(--color-white) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(44, 36, 36, 0.18);
+}
+
+#gifts.gifts-section .gift-option {
+    margin-top: 0.85rem;
+}
+
+#gifts.gifts-section .gift-option .gifts-text {
+    margin-bottom: 0.45rem;
+}
+
+#recommendations.recommendations-section {
+    background:
+        repeating-linear-gradient(90deg, rgba(245, 238, 233, 0.42) 0, rgba(245, 238, 233, 0.42) 6px, rgba(255, 255, 255, 0.16) 6px, rgba(255, 255, 255, 0.16) 12px),
+        linear-gradient(135deg, #050f24 0%, #17365f 50%, #5276a8 100%);
+}
+
+#recommendations.recommendations-section .recommendations-inner {
+    background: #ffffff !important;
+}
+
+#recommendations.recommendations-section .recommendations-inner::before {
+    display: none;
 }
 
 .itinerary-time {
