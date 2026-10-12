@@ -17,7 +17,7 @@ const externalConfig = window.config || {};
 function resolveEventId() {
     const eventConfig = externalConfig.event || {};
     const eventIdParam = String(eventConfig.eventIdParam || 'eventId').trim() || 'eventId';
-    const defaultEventId = String(eventConfig.defaultEventId || 'miguel-sofia-2026').trim() || 'miguel-sofia-2026';
+    const defaultEventId = String(eventConfig.defaultEventId || 'luisa-joaquin-2026').trim() || 'luisa-joaquin-2026';
     const params = new URLSearchParams(window.location.search || '');
     const paramValue = String(params.get(eventIdParam) || '').trim();
     const eventId = paramValue || defaultEventId;
@@ -369,7 +369,32 @@ const InvitadoApp = {
         this.data = remoteGuest || localGuest;
         this.renderSection();
         this.renderRSVP();
+        this.subscribeToGuestChanges(localGuest.id);
         return this.data;
+    },
+
+    subscribeToGuestChanges(guestId, attempt = 0) {
+        const rsvpDB = window.RSVPDatabase;
+        if (!rsvpDB || typeof rsvpDB.subscribeToInvitados !== 'function') {
+            if (attempt < 20) {
+                window.setTimeout(() => this.subscribeToGuestChanges(guestId, attempt + 1), 100);
+            }
+            return;
+        }
+
+        const eventId = String(window.currentEventId || window.config?.event?.defaultEventId || '').trim();
+        rsvpDB.subscribeToInvitados(eventId, (guests) => {
+            const updatedGuest = guests.find((guest) => String(guest.id) === String(guestId));
+            if (updatedGuest) {
+                this.data = updatedGuest;
+            } else if (guestId !== 'default') {
+                this.data = { id: guestId, nombre: 'Invitado no registrado', pases: 1, activo: false };
+            }
+            this.renderSection();
+            this.renderRSVP();
+        }, (error) => {
+            console.warn('No se pudo sincronizar el invitado en tiempo real:', error);
+        });
     },
 
     getLocalFromURL() {
