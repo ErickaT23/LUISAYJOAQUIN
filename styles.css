@@ -3274,6 +3274,11 @@ button {
     color: var(--color-mocca);
 }
 
+.playlist-adults-note {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .btn-playlist {
     display: inline-flex;
     align-items: center;
@@ -3694,6 +3699,8 @@ button {
     position: relative;
     text-align: center;
     overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .frase-final .frase-container {
@@ -3709,12 +3716,18 @@ button {
     position: relative;
     z-index: 2;
     font-family: var(--font-display);
-    font-size: clamp(1.2rem, 3vw, 1.45rem);
+    font-size: clamp(1.1rem, 2.8vw, 1.35rem);
     line-height: 1.7;
     color: var(--color-corinto-dark);
     margin: 0;
     font-style: italic;
     font-weight: 500;
+}
+
+.frase-referencia {
+    display: block;
+    text-align: center;
+    margin-top: 0.45rem;
 }
 
 @media (max-width: 767px) {
@@ -3723,7 +3736,7 @@ button {
     }
 
     .frase-texto {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.75;
     }
 }
