@@ -829,7 +829,7 @@ function initRSVP() {
     let popupTimer = null;
     const defaultIntroText = introMessage ? introMessage.textContent : '';
     const confirmedIntroText = 'Gracias por haber completado el formulario de asistencia.';
-    const rsvpWhatsappNumber = '50236011737';
+    const rsvpWhatsappNumber = '50258539206';
     
     if (!form) return;
 
